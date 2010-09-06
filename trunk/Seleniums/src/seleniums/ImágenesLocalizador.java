@@ -35,8 +35,13 @@ public class ImágenesLocalizador {
 
         setUp();
 
-        for(int i=0;i<1000000;i++){
+        for(int i=0;i<10000;i++){
 
+//"http://www.oepm.es/imgLoc/marcas/000/M0008966.jpg";
+            String url_raiz= "http://www.oepm.es/imgLoc/marcas/001/M00";
+
+
+        /*
         selenium.open("/LocalizadorTMVIEW/locMarcas.action?tmid=M"+(1228136+i));
         selenium.waitForPageToLoad(TIMEOUT);
         if (selenium.isTextPresent("Si la imagen se presenta desproporcionada (Alto, Ancho), Pinche aquí")){
@@ -44,9 +49,11 @@ public class ImágenesLocalizador {
             String dest=selenium.getAttribute("//tr/td[1]/img@src");
             
             Rutinas.tomafoto("dsdsa");
-
-            FileDownload.download(dest, "C:\\Documents and Settings\\FHERNAN1\\Mis documentos\\Proyectos\\Matlab\\PCA\\Marcas\\"+i+".jpg");
+*/
+               int s= 10000 + i;
+            FileDownload.download( url_raiz + s+ ".jpg", "C:\\Documents and Settings\\FHERNAN1\\Mis documentos\\Proyectos\\Matlab\\PCA\\Marcas\\"+i+".jpg");
             //UrlDownload.fileDownload(  dest,);
+
         }
         }
 
@@ -56,5 +63,5 @@ public class ImágenesLocalizador {
 
 
 	
-	}
+
 }
