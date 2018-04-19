@@ -15,7 +15,7 @@ public class ImágenesLocalizador {
 
     static Selenium selenium;
     public static final String TIMEOUT = "30000000";//tres mil segundos
-    //static String baseURL="http://oepmpc2804:7001/"; //DELIA
+    
     //static String baseURL="https://pruebatramites.oepm.es/"; //DESA
     static String baseURL="http://sitadex.oepm.es/";
 
@@ -51,7 +51,7 @@ public class ImágenesLocalizador {
             Rutinas.tomafoto("dsdsa");
 */
                int s= 10000 + i;
-            FileDownload.download( url_raiz + s+ ".jpg", "C:\\Documents and Settings\\FHERNAN1\\Mis documentos\\Proyectos\\Matlab\\PCA\\Marcas\\"+i+".jpg");
+            FileDownload.download( url_raiz + s+ ".jpg", "C:\\Documents and Settings\\XXXXX\\Mis documentos\\Proyectos\\Matlab\\PCA\\Marcas\\"+i+".jpg");
             //UrlDownload.fileDownload(  dest,);
 
         }
