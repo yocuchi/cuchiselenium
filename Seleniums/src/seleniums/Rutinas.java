@@ -38,7 +38,7 @@ public class Rutinas extends SeleneseTestCase{
     }
  public  static void tomafoto(String s) throws Exception{
     File f= File.createTempFile(s, ".png");
-    String CadenaRemota="\\\\oepmpc2543\\"+f.getAbsolutePath().replace("C:", "C$");
+    String CadenaRemota="\\\\XXXPC\\"+f.getAbsolutePath().replace("C:", "C$");
     f.delete();
     selenium.captureEntirePageScreenshot(CadenaRemota,"background=#FFFFFF");
     System.out.println(CadenaRemota);
