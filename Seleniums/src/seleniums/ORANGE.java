@@ -14,7 +14,7 @@ public class ORANGE {
 
     static Selenium selenium;
     public static final String TIMEOUT = "30000000";//tres mil segundos
-    //static String baseURL="http://oepmpc2804:7001/"; //DELIA
+   
     //static String baseURL="https://pruebatramites.oepm.es/"; //DESA
     static String baseURL="http://orange.es/"; //PRE
     static String URLPATH="/"; //PRE
